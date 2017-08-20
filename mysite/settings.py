@@ -130,4 +130,3 @@ DATABASES = {
         'HOST': 'alexismtorres112.mysql.pythonanywhere-services.com',
     }
 }
-db = DAL('mysql://alexismtorres112:gwcibm2017m>@<alexismtorres112>/<default>')
