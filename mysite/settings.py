@@ -120,3 +120,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'alexismtorres112$default',
+        'USER': 'alexismtorres112',
+        'PASSWORD': 'gwcibm2017',
+        'HOST': 'alexismtorres112.mysql.pythonanywhere-services.com',
+    }
+}
+db = DAL('mysql://alexismtorres112:gwcibm2017m>@<alexismtorres112>/<default>')
