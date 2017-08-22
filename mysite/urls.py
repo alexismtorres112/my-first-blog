@@ -9,6 +9,10 @@ urlpatterns = [
     url(r'^accounts/login/$', views.login, name='login'),
     url(r'^accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
     url(r'', include('blog.urls')),
-    url(r'^about/$', TemplateView.as_view(template_name="aboutpage2.html")),
+    url(r'^about/$', TemplateView.as_view(template_name="aboutpage2.html"), name='about'),
+    url(r'^contactus/$', TemplateView.as_view(template_name="indexcontact.html"), name='contactus'),
+    url(r'^submittous/$', TemplateView.as_view(template_name="submitdaft.html"), name='submit'),
+    url(r'^news/$', TemplateView.as_view(template_name="news.html"), name='news'),
+
 
 ]
