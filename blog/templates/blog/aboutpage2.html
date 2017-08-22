@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>About Us</h2>
+
+
+<div class="container">
+  <img src="dani.jpg" alt="dani.jpg" style="width:90px">
+  <p><span>Daniela Anush.</span> Student at Girls Who Code.</p>
+  <p>Add description.</p>
+</div>
+
+<div class="container">
+  <img src="IMG_4828.jpg" alt= "IMG_4828.jpg" style="width:90px">
+  <p><span>Alexis Marie Torres. </span> Student at Girls Who Code. </p>
+  <p>Add description.</p>
+</div>
+
+<div class="container">
+  <img src="mpic.jpg" alt="mpic.jpg" style="width:90px">
+  <p><span>Mia Tuchman.</span> Student at Girls Who Code.</p>
+  <p>Add description.</p>
+</div>
+
+<div class="container">
+  <img src="heaven.jpg" alt="heaven.jpg" style="width:90px">
+  <p><span> Heaven-Lee Searles.</span> Student at Girls Who Code.</p>
+  <p>Add description.</p>
+</div>
+
+<div class="container">
+  <img src="fatou.jpg" alt="fatou.jpg" style="width:90px">
+  <p><span> Fatou Seck.</span>Student at Girls Who Code.</p>
+  <p>Add description.</p>
+</div>
+
+</body>
+</html>
