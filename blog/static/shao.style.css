@@ -105,30 +105,3 @@ ul {
 	list-style-type: none;
 
 }
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.date {
-    color: grey;
-}
-
-.save {
-    float: right;
-}
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}

@@ -1,29 +1,13 @@
-{% load staticfiles %}
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>DAFT Magazine</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../static/shao.style.css">
-        <link rel="stylesheet" href="../static/base.css">
-        <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
-    </head>
+<head>
+  <title> D A F T </title>
+  <link rel="stylesheet" href="../djangogirls/blog/static/shao.style.css"></link>
+  <link rel="stylesheet" href="../djangogirls/blog/static/submitstyle.css"></link>
 
+</head>
 
-
-    <body>
-      <div class="page-header">
-    </div>
-
-    <!-- NAV BAR  -->
-
-    <div id="sidebar" class="hidden-xs hidden-sm">
-
-           <header>
-             Daft Magazine
-           </header>
+<body>
 
           <nav id="sidenav">
              <a href="/about">about me</a>
@@ -75,21 +59,17 @@
              </div>
              <a href="contact.html">contact</a>
            </nav>
+           <h1>submit to us!</h1>
+
+   <div id="paragraphz" class="border">
+           <p>  Daft Magazine wants to see your work! We are looking for art, photogrpahy, poems, stories, and advice questions! <br><t></p><p>Email us your entries to daftmagteam@gmail.com!
+             </t>Although we appreciate every entry we recieve we also have guidelines to follow if you would like to submit something:
+               <ul>
+                 <li>1.Submit your own work!
+                 <li>2. Make sure it is appropriate! This is a family friendly website and we would like to keep it that way by using clean language and publishing clean art!
+                 <li>3. Make sure it is revised and well written!
+               </ul>
+             </p>
          </div>
-
-    </div>
-
-
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-
-    </body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-</html>
+</body>
+      </html>
