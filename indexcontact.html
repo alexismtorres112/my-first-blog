@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>D A F T</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="shao.style.css">
+<link rel="stylesheet" href="contact.css"
+</head>
+<body>
+
+<div class="container-fluid">
+
+<div id="sidebar" class="hidden-xs hidden-sm">
+       <header>
+         Daft Magazine
+       </header>
+
+      <nav id="sidenav">
+         <a href="/about">about me</a>
+         <div>
+           <a data-toggle="collapse" href="#collapseHome" aria-expanded="false" aria-controls="collapeHome">
+             home
+           </a>
+           <div class="collapse" id="collapseHome">
+             <!-- <ul>
+               <li><a href="/prints">print flyers</a>
+               </li>
+               <li><a href="/web">web design</a>
+               </li>
+               <li><a href="/arst">coursework</a>
+               </li> -->
+             </ul>
+           </div>
+         </div>
+         <div>
+           <a data-toggle="collapse" href="#collapseCode" aria-expanded="false" aria-controls="collapseCode">
+             submit
+           </a>
+           <div class="collapse" id="collapseCode">
+             <!-- <ul>
+               <li><a href="/bridge">bridgerename</a>
+               </li>
+               <li><a href="/tbot">twitter bot</a>
+               </li>
+               <li><a href="/comp">coursework</a>
+               </li>
+             </ul> -->
+           </div>
+         </div>
+         <div>
+           <a data-toggle="collapse" href="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
+             categories
+           </a>
+           <div class="collapse" id="collapseCategories">
+             <ul>
+               <li><a href="/art">art</a>
+               </li>
+               <li><a href="/news">news</a>
+               </li>
+               <li><a href="/advice">advice</a>
+               </li>
+               <li><a href="/writing">writing</a>
+             </ul>
+           </div>
+         </div>
+         <a href="/contact">contact</a>
+       </nav>
+     </div>
+
+</div>
+
+
+
+
+
+
+<!--the rest-->
+
+
+
+
+     </div>
+
+
+  <h2 class="content">Contact Us!</h2>
+  <aside>
+    <div id="paragraphz" class="border">
+       <p>
+           We would <em>love</em> to hear from you! </p>
+           <p>Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       </p>
+    </div>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+  <form id="gform" method="POST"
+  action="https://script.google.com/macros/s/AKfycbzGQKjytbr4PUCryxLGdiT6yd2K72-fpLH1_QUobBNTf77RRL8/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+      <div id="paragraphz" class="border">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </div>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <div id="paragraphz" class="border">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <div id="paragraphz" class="border"
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+        <span id="email-invalid" style="display:none">
+          Must be a valid email address</span>
+      </div>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <div id="paragraphz" class="border"
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+      </div>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

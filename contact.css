@@ -1,0 +1,16 @@
+h2  {
+	color: pink;
+	text-align:center;
+	margin-left: 500px;
+	font-family: Arial;
+}
+#paragraphz {
+	text-align: left;
+	font-family: Arial;
+	margin-left: 300px;
+}
+.border{
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 300px;
+}
