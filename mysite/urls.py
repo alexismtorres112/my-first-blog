@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^contactus/$', TemplateView.as_view(template_name="indexcontact.html"), name='contactus'),
     url(r'^submittous/$', TemplateView.as_view(template_name="submitdaft.html"), name='submit'),
     url(r'^news/$', TemplateView.as_view(template_name="news.html"), name='news'),
-
+    url(r'^advice/$', TemplateView.as_view(template_name="advice.html"), name='advice'),
+    url(r'^home/$',TemplateView.as_view(template_name="base.html"), name='home'),
 
 ]
