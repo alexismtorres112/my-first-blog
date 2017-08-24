@@ -11,4 +11,8 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
     url(r'^category$', views.category_list, name='category_list'),
     url(r'^category/(?P<pk>\d+)/$', views.category_detail, name='category_detail'),
+    url(r'^news/$', views.post_news, name='post_news'),
+
+
+
 ]

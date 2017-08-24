@@ -23,6 +23,18 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
+def post_advice(request):
+    post = Post.objects.filter(category=1)
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def post_news(request):
+    post = Post.objects.filter(category=2)
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def post_writing(request):
+    post = Post.objects.filter(category=3)
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)

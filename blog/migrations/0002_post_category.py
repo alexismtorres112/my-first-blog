@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='post',
-            name='category',
-            field=models.TextField(default='cast'),
+            name='Category',
+            field=models.TextField(default='cat'),
         ),
     ]

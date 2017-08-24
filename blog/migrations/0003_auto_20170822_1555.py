@@ -22,12 +22,12 @@ class Migration(migrations.Migration):
 
         migrations.RemoveField(
             model_name='post',
-            name='category',
+            name='Category',
         ),
 
         migrations.AddField(
             model_name='post',
             name='category',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='blog.category'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='blog.Category'),
         ),
         ]
