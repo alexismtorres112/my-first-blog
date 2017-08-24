@@ -56,13 +56,13 @@
             </a>
             <div class="collapse" id="collapseCategories">
               <ul>
-                <li><a href="/art">art</a>
+                <li><a href="{% url 'art' %}">art</a>
                 </li>
                 <li><a href="{% url 'news' %}">news</a>
                 </li>
                 <li><a href="{% url 'advice' %}">advice</a>
                 </li>
-                <li><a href="/writing">writing</a>
+                <li><a href="{% url 'writing' %}">writing</a>
               </ul>
             </div>
           </div>
@@ -71,10 +71,9 @@
       </div>
 
      <div id="content">
-       <a href="{% url 'advice_post' %}"
+       <a href="{% url 'advice_post' %}">
 
-
-<!-- THIS IS THE HARD CODED VERSION OF DANI'S ADVICE
+<!-- THIS IS THE HARD CODED VERSION OF DANI'S ADVICE -->
              <div class="prints">
              <p> How to drop fake people/friends. </p>
            <br>

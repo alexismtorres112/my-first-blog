@@ -67,13 +67,13 @@
                </a>
                <div class="collapse" id="collapseCategories">
                  <ul>
-                   <li><a href="/art">art</a>
+                   <li><a href="{% url 'art' %}">art</a>
                    </li>
                    <li><a href="{% url 'post_news' %}">news</a>
                    </li>
                    <li><a href="{% url 'advice' %}">advice</a>
                    </li>
-                   <li><a href="/writing">writing</a>
+                   <li><a href="{% url 'writing' %}">writing</a>
                  </ul>
                </div>
              </div>
@@ -85,7 +85,7 @@
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
-                  
+
                     {% block content %}
                     {% endblock %}
                 </div>

@@ -10,6 +10,8 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
+
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)

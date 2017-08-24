@@ -15,5 +15,6 @@ urlpatterns = [
     url(r'^news/$', TemplateView.as_view(template_name="basenews.html"), name='news'),
     url(r'^advice/$', TemplateView.as_view(template_name="advice.html"), name='advice'),
     url(r'^home/$',TemplateView.as_view(template_name="base.html"), name='home'),
-
+    url(r'^art/$', TemplateView.as_view(template_name="artpage.html"), name='art'),
+    url(r'^writing/$', TemplateView.as_view(template_name="writing.html"), name='writing'),
 ]
