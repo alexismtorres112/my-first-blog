@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.utils import timezone
 from .models import Post, Category
 from django.shortcuts import render, get_object_or_404
-from .forms import PostForm
+from .forms import PostForm, PostNewsForm
 from django.shortcuts import redirect
 
 def category_list(request):
@@ -23,20 +23,20 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
-def post_advice(request):
-    post = Post.objects.filter(category=1)
+def post_list_advice(request):
+    posts = Post.objects.filter(category=1)
     return render(request, 'blog/post_list.html', {'posts': posts})
 
-def post_news(request):
-    post = Post.objects.filter(category=2)
+def post_list_news(request):
+    posts = Post.objects.filter(category=2)
     return render(request, 'blog/post_list.html', {'posts': posts})
 
-def post_writing(request):
-    post = Post.objects.filter(category=3)
+def post_list_writing(request):
+    posts = Post.objects.filter(category=3)
     return render(request, 'blog/post_list.html', {'posts': posts})
 
-def post_art(request):
-    post = Post.objects.filter(category=4)
+def post_list_art(request):
+    posts = Post.objects.filter(category=4)
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_new(request):

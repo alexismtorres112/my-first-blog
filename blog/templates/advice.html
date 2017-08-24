@@ -58,11 +58,11 @@
               <ul>
                 <li><a href="{% url 'art' %}">art</a>
                 </li>
-                <li><a href="{% url 'news' %}">news</a>
+                <li><a href="{% url 'post_list_news' %}">news</a>
                 </li>
-                <li><a href="{% url 'advice' %}">advice</a>
+                <li><a href="{% url 'post_list_advice' %}">advice</a>
                 </li>
-                <li><a href="{% url 'writing' %}">writing</a>
+                <li><a href="{% url 'post_list_writing' %}">writing</a>
               </ul>
             </div>
           </div>
@@ -70,18 +70,27 @@
         </nav>
       </div>
 
-     <div id="content">
-       <a href="{% url 'advice_post' %}">
+      {% block content %}
+          {% for post in posts %}
+              <div class="post">
+                  <div class="date">
+                      {{ post.published_date }}
+                  </div>
+                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                   <p>{{ post.text|linebreaksbr }}</p>
+              </div>
+          {% endfor %}
+      {% endblock content %}
 
 <!-- THIS IS THE HARD CODED VERSION OF DANI'S ADVICE -->
-             <div class="prints">
+             <!-- <div class="prints">
              <p> How to drop fake people/friends. </p>
            <br>
              <p>Well, first think of this. Why are they in your life in the first place? As a person, you must accept yourself being as your own environment.  Anything that is invited to being closer to you can mess up your environment and it is important to keep it sacred. When being comfortable in your own space, anyone who leaves or comes into your life will not have a deep connotation. These fake friends do not benefit you if they are not making you grow or making improvement to your mind, which is why it is important to find those who elevate you and bring progress. Clearly, these fake friends do not. When you come to realization about this, you must cut all ties with these kinds of people. Many are scared to be isolated or hated if they do not continue to be friends with these fake people, but why devalue yourself? Eagles do not hang around hawks. The people you surround yourself with will take an affect on you physically and mentally. Next thing you know, their actions become your actions, and their mindset become your mindset. It is better to elevate yourself alone doing other activities to replace them, rather than spending time with these toxic people/friends and becoming toxic yourself.
              </p><br>
            </div>
 
- -->
+ --> -->
 
 
 
